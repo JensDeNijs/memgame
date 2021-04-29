@@ -53,4 +53,18 @@ body {
 .front-face {
     transform: rotateY(180deg);
 }
-
+button{
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    top: 86%;
+    left: 44.6%;
+    text-align: center;
+    background-color: #f3bda1;
+    color: #02475e;
+    border: none;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "Helvetica";
+    font-weight: bold;
+}

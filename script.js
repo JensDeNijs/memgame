@@ -42,7 +42,7 @@ function unflipCards() {
         secondCard.classList.remove('flip');
 
         resetBoard();
-    }, 1500);
+    }, 950);
 }
 
 function resetBoard() {
@@ -52,9 +52,13 @@ function resetBoard() {
 
 (function shuffle() {
     cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 12);
+        let randomPos = Math.floor(Math.random() * 16);
         card.style.order = randomPos;
     });
 })();
+
+document.getElementById("reset").onclick = function() {
+    location.reload();
+};
 
 cards.forEach(card => card.addEventListener('click', flipCard));
